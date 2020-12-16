@@ -4,14 +4,14 @@ class LoginPage < SitePrism::Page
     element :btnlog, '#btn-login'
 
     def login(sucesso)
-        usuario.set 'francisco.andrelino'
-        senha.set 'Hepta1212'
+        usuario.set ''
+        senha.set ''
         find('#btn-login').click
     end
     
     def login_pagina_home(entrada)
-        usuario.set 'francisco.andrelino'
-        senha.set 'Hepta1212'
+        usuario.set ''
+        senha.set ''
         find('#btn-login').click
         find('#id-patrimonio').click
     end
